@@ -6,6 +6,7 @@ import os
 import logging
 import redis
 
+
 global redis1
 
 def main():
