@@ -33,9 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: securityCheck     
-            
       - uses: aufdenpunkt/python-safety-check@master
+      
+      - name: securityCheck     
         run: |
            safety check
       
