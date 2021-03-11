@@ -28,3 +28,15 @@ jobs:
         run: |
            echo 'Viewing the file: '   
            cat requirements.txt
+
+  safety-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: securityCheck     
+            
+      - uses: aufdenpunkt/python-safety-check@master
+        run: |
+           safety check
+      
